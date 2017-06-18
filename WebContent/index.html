@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="973383073416-si0rpdhbm6qbvb1odbsb0grkjjg1esek.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <link rel="stylesheet" href="../style.css">
+    <meta charset="UTF-8">
+    <title>DiscApp</title>
+</head>
+<body>
+<header><h1>DiscApp</h1></header>
+<div class="login">
+    <p>To access the DiscApp click on the button below and login to your Google account.</p>
+    <div id="my-signin2"></div>
+    <script>
+        function onSuccess(googleUser) {
+            console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+        }
+        function onFailure(error) {
+            console.log(error);
+        }
+        function renderButton() {
+            gapi.signin2.render('my-signin2', {
+                'scope': 'profile email',
+                'width': 240,
+                'height': 50,
+                'longtitle': true,
+                'theme': 'dark',
+                'onsuccess': onSuccess,
+                'onfailure': onFailure
+            });
+        }
+    </script>
+</div>
+<!--
+<div id="skip"><a href="homepage.html">Skip to Homepage</a></div>
+-->
+<div id="skip"><a href="DiscGolfScoringApp.jsp">Skip to Homepage</a></div>
+<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+</body>
+<footer><a href="https://github.com/discapp/discapp">Contact Us</a></footer>
+</html>

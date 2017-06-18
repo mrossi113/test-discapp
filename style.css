@@ -1,0 +1,113 @@
+*{
+
+}
+
+body {
+    background-color: lightgray;
+    margin-top: 6rem;
+    width: calc(100% - 12rem);
+    overflow-y: scroll;
+    min-height: calc(100vh - 6rem);
+}
+
+header {
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+}
+
+h1 {
+    height: 75px;
+    padding: 5px;
+    width: 100%;
+    background-color: steelblue;
+    color: black;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+p{
+    font-family: Helvetica;
+    font-size: 100%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90px;
+    padding-top: 4rem;
+}
+
+#my-signin2 {
+    margin: 0 auto;
+    width: 100px;
+    text-align: center;
+
+}
+
+footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 2rem;
+    background-color: #efefef;
+    text-align: center;
+}
+
+#skip {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+#skip a{
+    position:absolute;
+    left:-10000px;
+    overflow:hidden;
+}
+
+#skip a:focus {
+    position:static;
+    width:auto;
+    height:auto;
+}
+
+* {box-sizing: border-box;}
+
+.wrapper {
+    padding-top: 6rem;
+    padding-left: 6rem;
+    border-radius: 5px;
+}
+
+.wrapper > div {
+    border: 2px solid #ffa94d;
+    border-radius: 5px;
+    background-color: #ffd8a8;
+    padding: 1rem;
+    color: #d9480f;
+}
+.wrapper {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: 100px;
+    grid-template-areas:
+            "a a a a b b b b"
+            "a a a a b b b b"
+            "c c c c d d d d"
+            "c c c c d d d d";
+    align-items: start;
+}
+.item1 {
+    grid-area: a;
+}
+.item2 {
+    grid-area: b;
+}
+.item3 {
+    grid-area: c;
+}
+.item4 {
+    grid-area: d;
+}

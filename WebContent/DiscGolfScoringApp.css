@@ -1,0 +1,13 @@
+section {padding-top: 50px;
+         padding-right: 80px;
+         padding-bottom: 50px;
+padding-left: 80px;}
+
+   canvas{
+        width: 100% !important;
+        height: auto !important;
+    }
+	
+	.wrapper {
+    text-align: center;
+}

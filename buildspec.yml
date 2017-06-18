@@ -1,0 +1,24 @@
+version: 0.1
+
+phases:
+  install:
+    commands:
+      - echo No commands necessary
+  pre_build:
+    commands:
+      - echo Nothing to do in the pre_build phase...
+  build:
+    commands:
+      - echo No commands necessary
+  post_build:
+    commands:
+      - echo Nothing to do in the pre_build phase...
+artifacts:
+  files:
+    - /tomcat-api.jar
+    - /servlet-api.jar
+    - web/**/*
+    - src/**/*
+    - '**/*'
+  discard-paths: yes
+  base-directory: .

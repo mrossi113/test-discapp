@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html language="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />  
+<!--[if 1t IE 9]>
+     <script src=files/html5shiv.js"></script>
+<![endif]-->
+ <link rel = "stylesheet"
+   type = "text/css"
+   href = "DiscGolfScoringApp.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!--Datepicker script-->
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script>
+  $(document).ready(function() {
+    $("#datepicker").datepicker();
+  });
+  </script>
+<head>
+<title>Disc Golf Scoring App - Add Score</title>
+</head>
+<body>
+<nav role="navigation" class="navbar navbar-inverse navbar-static-top">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav">
+<li><a href="DiscGolfScoringApp.jsp">User Dashboard</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Links</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</div>
+</nav>
+
+<section>
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Add New Scores</div>
+   <div class="panel-body">
+    <div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Select Course
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="#">Test Course 1</a></li>
+    <li><a href="#">Test Course 2</a></li>
+    <li><a href="#">Test Course 3</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Special Test Course if needed</a></li>
+  </ul>
+</div>
+<br></br>
+<form>Date: 
+    <input id="datepicker" />
+</form>
+</div>
+  <!-- Table -->
+ <div class="table-responsive">
+  <table class="table table-bordered">
+  <thead>
+      <tr>
+        <th>Course</th>
+        <th>Date</th>
+        <th>Hole 1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+		<th>5</th>
+        <th>6</th>
+        <th>7</th>
+		<th>8</th>
+        <th>9</th>
+        <th>10</th>
+		<th>11</th>
+        <th>12</th>
+        <th>13</th>
+		<th>14</th>
+		<th>15</th>
+        <th>16</th>
+        <th>17</th>
+		<th>18</th>
+		<th>Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Test Data #1</td>
+        <td>6/15/2017</td>
+        <td>1</td>
+        <td>35</td>
+        <td>2</td>
+        <td>5</td>
+		<td>1</td>
+        <td>6</td>
+        <td>3</td>
+        <td>35</td>
+        <td>9</td>
+        <td>4</td>
+		<td>1</td>
+        <td>8</td>
+        <td>2</td>
+        <td>35</td>
+        <td>9</td>
+        <td>8</td>
+		<td>4</td>
+		<td>4</td>
+        <td>23</td>
+      </tr>
+	  <tr>
+        <td>Test Data #2</td>
+        <td>6/15/2017</td>
+        <td>1</td>
+        <td>35</td>
+        <td>2</td>
+        <td>5</td>
+		<td>1</td>
+        <td>6</td>
+        <td>3</td>
+        <td>35</td>
+        <td>9</td>
+        <td>4</td>
+		<td>1</td>
+        <td>8</td>
+        <td>2</td>
+        <td>35</td>
+        <td>9</td>
+        <td>8</td>
+		<td>4</td>
+		<td>4</td>
+        <td>23</td>
+      </tr>
+	  <tr>
+        <td>Test Data #3</td>
+        <td>6/15/2017</td>
+        <td>1</td>
+        <td>35</td>
+        <td>2</td>
+        <td>5</td>
+		<td>1</td>
+        <td>6</td>
+        <td>3</td>
+        <td>35</td>
+        <td>9</td>
+        <td>4</td>
+		<td>1</td>
+        <td>8</td>
+        <td>2</td>
+        <td>35</td>
+        <td>9</td>
+        <td>8</td>
+		<td>4</td>
+		<td>4</td>
+        <td>23</td>
+      </tr>
+	  <tr>
+        <td>Test Data #4</td>
+        <td>6/15/2017</td>
+        <td>1</td>
+        <td>35</td>
+        <td>2</td>
+        <td>5</td>
+		<td>1</td>
+        <td>6</td>
+        <td>3</td>
+        <td>35</td>
+        <td>9</td>
+        <td>4</td>
+		<td>1</td>
+        <td>8</td>
+        <td>2</td>
+        <td>35</td>
+        <td>9</td>
+        <td>8</td>
+		<td>4</td>
+		<td>4</td>
+        <td>23</td>
+      </tr>
+	  <tr>
+        <td>Test Data #5</td>
+        <td>6/15/2017</td>
+        <td>1</td>
+        <td>35</td>
+        <td>2</td>
+        <td>5</td>
+		<td>1</td>
+        <td>6</td>
+        <td>3</td>
+        <td>35</td>
+        <td>9</td>
+        <td>4</td>
+		<td>1</td>
+        <td>8</td>
+        <td>2</td>
+        <td>35</td>
+        <td>9</td>
+        <td>8</td>
+		<td>4</td>
+		<td>4</td>
+        <td>23</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+  <br></br>
+  <div class="wrapper"><button type="button" class="btn btn-default">Submit</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button type="button" class="btn btn-default">Cancel</button></div>
+</section>
+</body>
+</html>
