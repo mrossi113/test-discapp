@@ -2,7 +2,7 @@
 	pageEncoding="UTF-8"%>
 <%@ page import="java.util.*, discapp.* "%>
 
-<jsp:useBean id = "dashboard" class="discapp.PlayerDashboard"/>
+<jsp:useBean id ="dashboard" class="discapp.PlayerDashboard"/>
 <jsp:setProperty name="dashboard" property="playerString" value="cruoti@gmail.com"/>
 
 <html language="en">

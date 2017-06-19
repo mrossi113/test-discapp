@@ -7,7 +7,7 @@
     <title>Player Dashboard</title>
 </head>
 <body>
-    <jsp:useBean id = "dashboard" class="discapp.PlayerDashboard"/>
+    <jsp:useBean id ="dashboard" class="discapp.PlayerDashboard"/>
     <jsp:setProperty name="dashboard" property="playerString" value="cruoti@gmail.com"/>
     <p><jsp:getProperty name="dashboard" property="message"/></p>
 
