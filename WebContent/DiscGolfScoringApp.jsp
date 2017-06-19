@@ -1,13 +1,13 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
-<%@ page import="java.util.*, discapp.* "%>
+<%@ page contenttype="text/html; charset=UTF-8"%>
+<%@ page import="discapp.* "%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <jsp:useBean id ="dashboard" class="discapp.PlayerDashboard"/>
 <jsp:setProperty name="dashboard" property="playerString" value="cruoti@gmail.com"/>
 
 <html language="en">
 <head>
-  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
 
   <!--[if 1t IE 9]>
@@ -59,7 +59,7 @@
 
   <section>
     <div class="btn-group" role="group" aria-label="...">
-      <input type="button" value="Add New Score" onClick="javascript:window.location='DiscGolfScoringApp.jsp';">
+      <input type="button" value="Add" onClick="javascript:window.location='DiscGolfScoringApp.jsp';">
     </div>
     <br></br>
 
